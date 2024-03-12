@@ -13,6 +13,12 @@ class MainActivity : ReactActivity() {
    */
   override fun getMainComponentName(): String = "DonationApp"
 
+  @Override
+  protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(null);
+  }
+
+
   /**
    * Returns the instance of the [ReactActivityDelegate]. We use [DefaultReactActivityDelegate]
    * which allows you to enable New Architecture with a single boolean flags [fabricEnabled]
