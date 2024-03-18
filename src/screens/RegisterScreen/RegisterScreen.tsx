@@ -65,7 +65,12 @@ const RegisterScreen = ({navigation}: {navigation: any}) => {
           placeholder="******"
         />
         <View style={{marginTop: verticalScale(20)}}>
-          <Button buttonTitle="Register" onPress={() => {}} disabled={false} />
+          <Button
+            buttonTitle="Register"
+            onPress={() => {}}
+            disabled={false}
+            isLoading={false}
+          />
         </View>
       </KeyboardAvoidingView>
     </SafeAreaView>
