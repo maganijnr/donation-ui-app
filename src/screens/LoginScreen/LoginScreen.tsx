@@ -40,7 +40,14 @@ const LoginScreen = ({navigation}: {navigation: any}) => {
           placeholder="******"
         />
         <View style={{marginTop: verticalScale(20)}}>
-          <Button buttonTitle="Login" onPress={() => {}} disabled={false} />
+          <Button
+            buttonTitle="Login"
+            onPress={() => {
+              navigation.navigate('Home');
+            }}
+            disabled={false}
+            isLoading={true}
+          />
         </View>
         <Pressable
           onPress={() => {
