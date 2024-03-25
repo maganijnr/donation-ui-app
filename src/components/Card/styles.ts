@@ -20,7 +20,6 @@ const cardStyles = StyleSheet.create({
       backgroundColor: "#145855",
       paddingHorizontal: horizontalScale(10),
       paddingVertical: verticalScale(4),
-     
       left: 10,
       top: 8,
       borderRadius: horizontalScale(100),
