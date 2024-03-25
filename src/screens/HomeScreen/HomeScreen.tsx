@@ -33,7 +33,7 @@ export interface CardProps {
   price: string;
 }
 
-const HomeScreen = () => {
+const HomeScreen = ({navigation}: {navigation: any}) => {
   const [search, setSearch] = useState('');
   const [categoryFilter, setCategoryFilter] = useState('all');
   const [categoryList, setCategoryList] = useState<CardProps[]>([]);
@@ -83,7 +83,9 @@ const HomeScreen = () => {
       <View style={homeStyles.cardListView}>
         <FlatList
           data={categoryList}
-          renderItem={({item}) => <CardDetails cardInfo={item} />}
+          renderItem={({item}) => (
+            <CardDetails navigation={navigation} cardInfo={item} />
+          )}
           ListHeaderComponent={
             <>
               <View style={homeStyles.pageHeader}>
